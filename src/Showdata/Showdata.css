@@ -1,0 +1,185 @@
+.show-container {
+  height: 100vh;
+  width: 100%;
+  background-image: url("./Sky.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.data-container {
+  height: 50%;
+  width: 50%;
+  text-align: center;
+}
+
+.data-container div {
+  line-height: 5rem;
+}
+.city,
+.weather,
+.current-temp,
+.temp {
+  font-size: 24px;
+  font-weight: bold;
+}
+.city {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.weather span {
+  margin-left: 40vh;
+  font-weight: 400;
+}
+.current-temp span {
+  margin-left: 36vh;
+  font-weight: 400;
+}
+
+.temp span {
+  margin-left: 18vh;
+  font-weight: 400;
+}
+.temp-min span {
+  margin-left: 20vh;
+}
+
+@media (max-width: 1026px) {
+  .city {
+    font-size: 54px;
+  }
+  .weather,
+  .current-temp,
+  .temp {
+    font-size: 24px;
+  }
+  .data-container {
+    height: 80%;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .current-temp span {
+    margin-left: 28vh;
+  }
+  .temp span {
+    margin-left: 28vh;
+  }
+  .temp-min span {
+    margin-left: 31vh;
+  }
+}
+
+@media (max-width: 950px) {
+  .data-container {
+    height: 80%;
+    width: 65%;
+    text-align: center;
+  }
+}
+@media (max-width: 770px) {
+  .weather span {
+    margin-left: 25vh;
+  }
+  .temp span {
+    margin-left: 6vh;
+  }
+  .temp-min span {
+    margin-left: 8vh;
+  }
+  .current-temp span {
+    margin-left: 23vh;
+  }
+}
+@media (max-height: 610px) {
+  .data-container {
+    height: 80%;
+    width: 65%;
+    text-align: center;
+  }
+  .city {
+    font-size: 45px;
+  }
+  .weather span {
+    margin-left: 56vh;
+  }
+  .current-temp span {
+    margin-left: 50vh;
+  }
+}
+@media (max-width: 610px) {
+  .data-container {
+    height: 80%;
+    width: 80%;
+    text-align: center;
+  }
+  .weather,
+  .current-temp,
+  .temp {
+    font-size: 21px;
+  }
+}
+@media (max-width: 500px) {
+  .data-container {
+    height: 80%;
+    width: 100%;
+    text-align: center;
+  }
+  .city,
+  .weather,
+  .current-temp,
+  .temp {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .weather span {
+    margin-left: 25vh;
+    font-weight: 400;
+  }
+  .current-temp span {
+    margin-left: 22vh;
+    font-weight: 400;
+  }
+
+  .temp span {
+    margin-left: 13vh;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 376px) {
+  .temp span {
+    margin-left: 11vh;
+  }
+}
+
+@media (max-width: 360px) {
+  .temp span {
+    margin-left: 10vh;
+  }
+  .weather span {
+    margin-left: 27vh;
+  }
+}
+@media (max-width: 330px) {
+  .temp span {
+    margin-left: 8vh;
+  }
+}
+@media (max-width: 300px) {
+  .weather span {
+    margin-left: 18vh;
+  }
+  .current-temp span {
+    margin-left: 13vh;
+  }
+  .temp span {
+    margin-left: 2vh;
+  }
+}
